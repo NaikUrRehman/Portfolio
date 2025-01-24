@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+}
+
+.course-videos {
+    padding: 50px 10%;
+}
+
+.course-videos h1{
+    color: #ff004f;
+    font-size: 60px;
+    text-align: center;
+    margin: 50px 0;
+    border-bottom: #eeff05 dotted;
+    width: auto;
+}
+.video-row {
+    display: flex;
+    justify-content: space-between ;
+    flex-wrap: wrap;
+}
+

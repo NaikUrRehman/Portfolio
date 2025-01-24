@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background: url(./bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 5px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Mypic {
+    width: 5rem;
+    height: 5rem;
+    margin: 2rem;
+    border-radius: 5rem;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: #ff004f;
+    font-size: 60px;
+}
+
+
+/* About */
+#about {
+    padding-top: 80px;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between ;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 25%;
+
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 70%;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+
+.tab-links{
+    margin-top: 20px;
+    margin-right: 20%;
+    margin-left: 0%;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+} 
+
+.tab-links::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    left: 0;
+    background: #ff004f;
+    bottom: -5px;
+    position: absolute;
+    transform: 0.5s;
+}
+
+
+.col-1{
+    margin-top: 30px;
+    flex-basis: 33%;
+    margin-right: 10px;
+}
+
+.col-2{
+    margin-top: 30px;
+    flex-basis: 33%;
+}
+
+.col-3{
+    margin-top: 30px;
+    flex-basis: 33%;
+} 
+
+.col-1 ul li{ 
+    margin-bottom: 10px;
+    padding-right: 5rem;
+    
+}
+
+.col-2 ul li{ 
+    margin-bottom: 10px;
+    padding-right: 5rem;
+}
+
+.col-3 ul li{ 
+    margin-bottom: 10px;
+    padding-right: 5rem;
+}
+
+.col-1 ul li span{ 
+    color: #be3232;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+
+.col-2 ul li span{ 
+    color: #be3232;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+
+.col-3 ul li span{ 
+    color: #be3232;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+
+/* Projects */
+
+.Projects-tag{
+    text-align: center;
+    padding: 50px 0;
+    font-size: 60px;
+}
+
+.Proj-col-1 {
+    padding-top: 10px;
+    flex-basis: 15%;
+    height: 300px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.Proj-col-1 h1{
+    color: #ffffff;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.Proj-col-1 p{
+    color: hsla(0, 0%, 100%, 0.958);
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 70%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5px;
+}
+
+
+.Proj-col-1  img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.Proj-col-2 {
+    flex-basis: 70%;
+}
+
+.Proj-sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Internships */
+.Internship-tag{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.Detils-internship{
+    padding: 10px 0;
+    text-align: center;
+}
+
+.Detils-internship h2 a{
+    text-decoration: none;
+    color: #ff004f;
+    border-bottom: dotted;
+    
+}
+
+.Detils-internship h3{
+padding: 20px 0;
+    
+}
+
+.Detils-internship img{
+    padding: 5px;
+    border-radius: 2000px;
+    width: 10rem;
+    height: 10rem;
+}
+
+
+/* Bottom link CSS */
+
+.Link-Container{
+    background-color: rgb(20, 20, 20);
+    padding: 10px 10%;
+    height: 500px;
+}
+
+.Link-Container h1{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.Link-Container p{
+    text-align: center;
+    padding: 50px 0;
+    font-size: 30px;
+    color: #fff;
+}
+.link-col-1 {
+    padding-top: 10px;
+    flex-basis: 10%;
+}
+
+.link-col-1 img{
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.link-col-1 h4 a{
+    text-decoration: none;
+    border-bottom: dotted;
+    
+}
